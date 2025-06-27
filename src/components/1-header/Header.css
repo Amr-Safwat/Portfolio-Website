@@ -1,0 +1,37 @@
+header {
+  width: 100%;
+    position: fixed;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 10px;
+    transition: 0.3s;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 0px;
+}
+header .container .links {
+  display: flex;
+  z-index: 2;
+}
+header .container .links .link {
+  color: white;
+  /* color: var(--text-color); */
+  font-size: 1.1em;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+header .container .links .link:hover {
+color: var(--main-color);
+}
