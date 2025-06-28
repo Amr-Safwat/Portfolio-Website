@@ -16,7 +16,7 @@ export default function Landing() {
             React.js...
           </p>
           <a href="../../assets/Amr-Safwat-CV.pdf" className="btn" download>Download CV</a>
-          {/* <div className="icons">
+          <div className="icons">
             <a href="#" className="icon">
               <i class="fab fa-linkedin"></i>
             </a>
@@ -29,7 +29,7 @@ export default function Landing() {
             <a href="#" className="icon">
               <i class="fab fa-facebook"></i>
             </a>
-          </div>           */}
+          </div>          
         </div>
       </div>
     </>
