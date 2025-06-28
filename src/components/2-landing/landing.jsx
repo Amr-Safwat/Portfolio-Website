@@ -15,7 +15,7 @@ export default function Landing() {
             responsive websites using HTML, CSS, Bootstrap, JavaScript, and
             React.js...
           </p>
-          <a href="./Amr-Safwat-CV.pdf" className="btn" download>Download CV</a>
+          <a href="../../assets/Amr-Safwat-CV.pdf" className="btn" download>Download CV</a>
           {/* <div className="icons">
             <a href="#" className="icon">
               <i class="fab fa-linkedin"></i>

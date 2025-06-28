@@ -1,9 +1,11 @@
+
+
 .landing {
   width: 100% 1161px;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(./images/background.jpg);
+  background-image: url(../../assets/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
