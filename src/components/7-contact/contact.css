@@ -1,0 +1,50 @@
+/* Contact */
+.contact .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 50px;
+	padding: 0 160px;
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+
+	.contact .container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		padding: 0 60px;
+	}
+}
+
+.contact a {
+	text-decoration: none;
+	color: black;
+}
+
+.contact .card {
+	box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px 0;
+	transition: 0.3s;
+}
+
+.contact .card .icon {
+	font-size: 4em;
+	color: var(--main-color);
+}
+
+.contact .card .info h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+	margin: 25px 0 20px;
+	color: var(--text-color);
+}
+
+.contact .card .info p {
+	color: #555;
+}
+
+/* Contact */

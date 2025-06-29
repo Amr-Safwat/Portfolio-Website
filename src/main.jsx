@@ -7,6 +7,7 @@ import Landing from './components/2-landing/landing'
 import About from './components/3-about/About'
 import Services from './components/4-services/services'
 import Skills from './components/5-my-skills/skills'
+import Contact from './components/7-contact/contact'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,5 +16,6 @@ createRoot(document.getElementById('root')).render(
     <About />
     <Services />
     <Skills />
+    <Contact />
   </StrictMode>,
 )
