@@ -1,0 +1,18 @@
+/* Services */
+.services .card .icon {
+	color: var(--main-color);
+	font-size: 8em;
+}
+
+.services .card .info h3 {
+	color: var(--main-color);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.services .card .info p {
+	color: #555;
+}
+
+/* Services */
