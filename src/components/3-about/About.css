@@ -1,0 +1,53 @@
+/* About Me */
+.about .container {
+	display: flex;
+	align-items: start;
+}
+.about .container .image {
+	width: 350px;
+	margin-right: 50px;
+}
+.about .container .image img {
+	width: 350px;
+	border-radius: 30px;
+}
+
+.about .container .info h2 {
+	font-size: 36px;
+	margin-bottom: 15px;
+	color: var(--text-color);
+}
+.about .container .info p {
+	line-height: 2;
+	font-size: 20px;
+	color: #777;
+}
+.about .container .info a {
+	margin: 20px 0 0;
+}
+@media (max-width: 991px) {
+	.about .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.about .container .image {
+		margin: 0;
+		width: 335px;
+	}
+	.about .container .image img {
+		width: 335px;
+	}
+	.about .container .info {
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+@media (max-width: 350px) {
+	.about .container .image {
+		width: 313px;
+	}
+	.about .container .image img {
+		width: 313px;
+	}
+}
+/* About Me */
