@@ -9,6 +9,7 @@ import Services from './components/4-services/services'
 import Skills from './components/5-my-skills/skills'
 import Contact from './components/7-contact/contact'
 import Footer from './components/8-footer/footer'
+import Projects from './components/6-projects/projects'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     <About />
     <Services />
     <Skills />
+    <Projects />
     <Contact />
     <Footer />
   </StrictMode>,
