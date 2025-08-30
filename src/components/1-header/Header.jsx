@@ -1,6 +1,14 @@
+import { useRef } from 'react';
 import '../1-header/header.css';
 
 export default function Header() {
+  function darkMode() {
+    if (document.body.className === 'dark') {
+      document.body.className = '';
+    } else {
+      document.body.className = 'dark';
+    }
+  }
   return (
     <header>
       <div class="container">
@@ -20,7 +28,7 @@ export default function Header() {
             <a href="#projects">Portfolio</a>
             <a href="#contact">Contact</a>
           </div>
-          <div class="icons">
+          <div class="icons" onClick={darkMode}>
             <i class="fa-solid fa-sun icon"></i>
             <i class="fa-solid fa-moon icon"></i>
           </div>
