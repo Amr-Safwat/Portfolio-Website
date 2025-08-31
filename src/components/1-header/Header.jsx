@@ -4,12 +4,19 @@ import '../1-header/header.css';
 export default function Header() {
 
   const menu = useRef();
+  const sunIcon = useRef();
+  const moonIcon = useRef();
 
   function darkMode() {
     if (document.body.className === 'dark') {
       document.body.className = '';
+      sunIcon.current.style.display = 'none'
+      moonIcon.current.style.display = 'inline'
     } else {
       document.body.className = 'dark';
+      moonIcon.current.style.display = 'none';
+      sunIcon.current.style.display = 'inline'
+
     }
   }
 
@@ -41,8 +48,8 @@ export default function Header() {
             <a href="#contact">Contact</a>
           </div>
           <div class="icons" onClick={darkMode}>
-            <i class="fa-solid fa-sun icon"></i>
-            <i class="fa-solid fa-moon icon"></i>
+            <i ref={sunIcon} class="fa-solid fa-sun icon"></i>
+            <i ref={moonIcon} class="fa-solid fa-moon icon"></i>
           </div>
         </div>
       </div>
