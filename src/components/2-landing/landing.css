@@ -3,7 +3,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../../assets/images/background.jpg);
+  /* background-image: url(../../assets/images/background.jpg); */
+  background-color: rgb(64, 0, 124);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -13,6 +14,9 @@
 }
 .landing .container {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .landing .container .hello {
   color: white;
@@ -72,4 +76,23 @@
 .landing .container .icons .icon i {
   padding: 10px;
   transition: 0.1s;
+}
+
+.landing .container .right-section img {
+  width: 630px;
+}
+
+@media (max-width: 1370px) {
+	.landing .container .right-section img {
+		width: 500px;
+	}
+  	.landing .container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 760px) {
+  .landing .container .right-section img {
+		display: none;
+	}
 }
