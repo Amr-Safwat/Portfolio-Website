@@ -6,6 +6,7 @@ export default function Header() {
   const menu = useRef();
   const sunIcon = useRef();
   const moonIcon = useRef();
+  const header = useRef();
 
   function darkMode() {
     if (document.body.className === 'dark') {
@@ -28,8 +29,12 @@ export default function Header() {
     }
   }
 
+  document.body.onscroll = () => {
+    header.current.style.backgroundColor = 'var(--body-color)';
+  }
+
   return (
-    <header>
+    <header ref={header}>
       <div class="container">
         <a href="#" class="logo">
           Portfolio
